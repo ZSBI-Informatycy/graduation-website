@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>SINISTER</title>
         <meta charset="utf-8" />
         <meta name="author" content="Marek Małecki" />
         <meta name="description" content="A website made for a graduation project" />
@@ -14,22 +15,34 @@
         <div id="app">
             <!-- Our website's logo -->
             <div id="logo">
-                <div id="logo-wrapper" style="white-space: nowrap;">
-                    <!-- some image goes here -->
-                    <img src="res/logo.png" class="logo-image" />
-                    <div id="logo-text">SINISTER</div>
-                </div>
+                <!-- some image goes here -->
+                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
             </div>
             
             <!-- Banners -->
             <div id="banner">
-
+                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
             </div>
 
             <!-- Control Panel for website's owner -->
             <div id="control-panel">
-
+                <form class="control-panel">
+                    <div class="panel-title">
+                        LOGIN
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Username</div>
+                        <input type="text" name="username" class="panel-edit">
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Password</div>
+                        <input type="text" name="password" class="panel-edit">
+                    </div>
+                    <input type="submit" value="SUBMIT" class="panel-submit">
+                </form>
             </div>
+
+            <div style="clear:both;"></div>
 
             <!-- Left Nav Menu -->
             <nav id="left-panel">
@@ -46,7 +59,7 @@
 
                 <!-- Contact/Social -->
                 <a href="sub/contact.html" class="option">
-                    Contact
+                    CONTACT 
                 </a>
 
                 <!-- Info/sources/etc. -->
