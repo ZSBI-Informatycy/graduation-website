@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SINISTER</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Marek Małecki" />
+        <meta name="description" content="A website made for a graduation project" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+        <meta name="robots" content="index,follow" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- The entire document is wrapped inside this "app" block -->
+        <div id="app">
+            <!-- Our website's logo -->
+            <div id="logo">
+                <!-- some image goes here -->
+                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
+            </div>
+            
+            <!-- Banners -->
+            <div id="banner">
+                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
+            </div>
+
+            <!-- Control Panel for website's owner -->
+            <div id="control-panel">
+                <form class="control-panel">
+                    <div class="panel-title">
+                        LOGIN
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Username</div>
+                        <input type="text" name="username" class="panel-edit">
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Password</div>
+                        <input type="text" name="password" class="panel-edit">
+                    </div>
+                    <input type="submit" value="SUBMIT" class="panel-submit">
+                </form>
+            </div>
+
+            <div style="clear:both;"></div>
+
+            <!-- Left Nav Menu -->
+            <nav id="left-panel">
+
+                <!-- Homepage -->
+                <a href="index.html" class="option">
+                    MAIN
+                </a>
+
+                <!-- Projects -->
+                <a href="sub/projects.html" class="option">
+                    PROJECTS
+                </a>
+
+                <!-- Contact/Social -->
+                <a href="sub/contact.html" class="option">
+                    CONTACT 
+                </a>
+
+                <!-- Info/sources/etc. -->
+                <a href="sub/info.html" class="option">
+                    INFO
+                </a>
+
+            </nav>
+
+            <!-- Content wrapper of the website -->
+            <article id="main">
+                <!-- Header of the article/content -->
+                <header id="topbar">
+
+                </header>
+
+                <!-- Actual content -->
+                <div id="content">
+
+                </div>
+            </article>
+
+            <!-- Ad Banner -->
+            <div id="ad-right">
+
+            </div>
+
+            <!-- Footer -->
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>
