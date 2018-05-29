@@ -34,6 +34,19 @@
         authorDiv.innerHTML = author;
     }
 
+    let submitButton    = getElem('submit-button');
+    let app             = getElem('app');
+    let window          = getElem('login-window');
+
+    submitButton.onclick = function() {
+        if((document.forms['control-panel'].password.value === '') || 
+            (document.forms['control-panel'].username.value === '')) {
+                alert('One of the fields is empty!')
+        }
+
+
+    }
+
     window.addEventListener('load', function () {
         writeDate();
         writeAuthor();

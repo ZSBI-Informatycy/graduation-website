@@ -12,6 +12,16 @@
     <body>
         <!-- The entire document is wrapped inside this "app" block -->
         <div id="app">
+            <!-- Hidden Window div -->
+            <div id="login-window">
+                <div class="window-title">
+                    LOGIN FAILED!
+                </div>
+                <div class="window-content">
+                    Login system still under construction!
+                </div>
+            </div>
+
             <!-- Our website's logo -->
             <div id="logo">
                 <!-- some image goes here -->
@@ -25,19 +35,19 @@
 
             <!-- Control Panel for website's owner -->
             <div id="control-panel">
-                <form class="control-panel">
+                <form class="control-panel" name="control-panel">
                     <div class="panel-title">
                         LOGIN
                     </div>
                     <div class="panel-aligner">
                         <div class="panel-subtitle">Username</div>
-                        <input type="text" name="username" class="panel-edit">
+                        <input type="text" name="username" class="panel-edit" id="login">
                     </div>
                     <div class="panel-aligner">
                         <div class="panel-subtitle">Password</div>
-                        <input type="text" name="password" class="panel-edit">
+                        <input type="password" name="password" class="panel-edit" id="password">
                     </div>
-                    <input type="submit" value="SUBMIT" class="panel-submit">
+                    <input type="submit" value="SUBMIT" class="panel-submit" id="submit-button">
                 </form>
             </div>
 
@@ -94,6 +104,7 @@
             <footer>
                 SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
             </footer>
+                        
         </div>
         <script src="js/main.js"></script>
     </body>
