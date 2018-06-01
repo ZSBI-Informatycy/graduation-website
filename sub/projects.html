@@ -7,90 +7,113 @@
         <meta name="description" content="A website made for a graduation project" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
         <meta name="robots" content="index,follow" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="../res/icons/css/fontawesome-all.css" />
+        <link rel="stylesheet" href="../css/substyle.css" />
     </head>
     <body>
-        <!-- The entire document is wrapped inside this "app" block -->
-        <div id="app">
-            <!-- Our website's logo -->
-            <div id="logo">
-                <!-- some image goes here -->
-                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
-            </div>
-            
-            <!-- Banners -->
-            <div id="banner">
-                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
-            </div>
+        <!-- Hidden Window div -->
+		<div id="login-window">
+			<div class="window-title">
+				<div id="close-button">X</div>
+				LOGIN FAILED!
+			</div>
+			<div class="window-content">
+				Login system still under construction!
+			</div>
+		</div>
+		
+		<!-- The entire document is wrapped inside this "app" block -->
+		<div id="app">
 
-            <!-- Control Panel for website's owner -->
-            <div id="control-panel">
-                <form class="control-panel">
-                    <div class="panel-title">
-                        LOGIN
+			<!-- Our website's logo -->
+			<div id="logo">
+				<!-- some image goes here -->
+				<img src="../res/logo.png" class="logo-image" alt="SINISTER"/>
+			</div>
+
+			<!-- Banners -->
+			<div id="banner">
+				<img src="../res/banner.png" class="banner-image" alt="BANNER"/>
+			</div>
+
+			<!-- Control Panel for website's owner -->
+			<div id="control-panel">
+				<form class="control-panel" name="control-panel">
+					<div class="panel-title">
+						LOGIN
+					</div>
+					<div class="panel-aligner">
+						<div class="panel-subtitle">Username</div>
+						<input type="text" name="username" class="panel-edit" id="login">
+					</div>
+					<div class="panel-aligner">
+						<div class="panel-subtitle">Password</div>
+						<input type="password" name="password" class="panel-edit" id="password">
+					</div>
+					<input type="button" value="SUBMIT" class="panel-submit" id="submit-button">
+				</form>
+			</div>
+
+			<div style="clear:both;"></div>
+
+			<!-- Left Nav Menu -->
+			<div id="left-panel">
+				<nav id="left-panel">
+
+					<!-- Homepage -->
+					<a href="../index.html" class="option">
+						MAIN
+					</a>
+
+					<!-- Projects -->
+					<a href="projects.html" class="option">
+						PROJECTS
+					</a>
+
+					<!-- Contact/Social -->
+					<a href="contact.html" class="option">
+						CONTACT
+					</a>
+
+					<!-- Info/sources/etc. -->
+					<a href="info.html" class="option">
+						INFO
+					</a>
+
+				</nav>
+			</div>
+
+			<!-- Content wrapper of the website -->
+			<article id="main">
+				<!-- Header of the article/content -->
+				<header id="topbar">
+					posted on: <span id="date"></span>
+					<br />
+					by <span id="author"></span>
+				</header>
+
+				<!-- Actual content -->
+				<div id="content">
+					<div class="tile_big">
+                        <i class="fab fa-github"></i>
+                        <div class="tile_text">
+                            SINISTER
+                        </div>
                     </div>
-                    <div class="panel-aligner">
-                        <div class="panel-subtitle">Username</div>
-                        <input type="text" name="username" class="panel-edit">
-                    </div>
-                    <div class="panel-aligner">
-                        <div class="panel-subtitle">Password</div>
-                        <input type="text" name="password" class="panel-edit">
-                    </div>
-                    <input type="submit" value="SUBMIT" class="panel-submit">
-                </form>
-            </div>
+				</div>
+			</article>
 
-            <div style="clear:both;"></div>
+			<!-- Ad Banner -->
+			<div id="ad-right">
+				Place for an advertisement
+			</div>
 
-            <!-- Left Nav Menu -->
-            <nav id="left-panel">
+			<!-- Footer -->
+			<footer>
+				SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
+			</footer>
 
-                <!-- Homepage -->
-                <a href="index.html" class="option">
-                    MAIN
-                </a>
-
-                <!-- Projects -->
-                <a href="sub/projects.html" class="option">
-                    PROJECTS
-                </a>
-
-                <!-- Contact/Social -->
-                <a href="sub/contact.html" class="option">
-                    CONTACT 
-                </a>
-
-                <!-- Info/sources/etc. -->
-                <a href="sub/info.html" class="option">
-                    INFO
-                </a>
-
-            </nav>
-
-            <!-- Content wrapper of the website -->
-            <article id="main">
-                <!-- Header of the article/content -->
-                <header id="topbar">
-
-                </header>
-
-                <!-- Actual content -->
-                <div id="content">
-
-                </div>
-            </article>
-
-            <!-- Ad Banner -->
-            <div id="ad-right">
-
-            </div>
-
-            <!-- Footer -->
-            <footer>
-
-            </footer>
-        </div>
+		</div>
+        <script src="../js/main.js"></script>
     </body>
 </html>

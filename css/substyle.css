@@ -1,0 +1,52 @@
+@import url(style.css);
+
+header#topbar {
+    display: none;
+}
+
+article#main {
+    background-color: rgb(42, 42, 42);
+}
+
+i {
+    font-size: 10vh;
+    width: auto;
+    display: block;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+.tile_big {
+    width: 20%;
+    height: 30%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: rgb(32, 32, 110);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3vh;
+    box-sizing: border-box;
+    border: 5px outset #44449b;
+    border-radius: 50%;
+    text-shadow: 2px 2px #000;
+    position: relative;
+    flex-flow: column wrap;
+    transition: all 0.2s ease;
+    user-select: none;
+	-moz-user-select: none;
+}
+
+.tile_big:hover {
+    transform: scale(1.05);
+    background-color: rgb(37, 37, 131);
+}
+
+.tile_big:active {
+    transform: scale(0.95);
+    border: 5px inset #44449b;
+    background-color: rgb(32, 32, 131);
+}
