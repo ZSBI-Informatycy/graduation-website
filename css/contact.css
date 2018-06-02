@@ -49,6 +49,7 @@ div#content {
     user-select: none;
     -moz-user-select: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .tile_desc {
@@ -79,10 +80,12 @@ div#content {
 
 .tile_big:hover {
     transform: scale(1.05);
+    color: #fff;
 }
 
 .tile_big:active {
     transform: scale(0.95);
+    color: #fff;
 }
 
 /* Git Icon */
@@ -91,6 +94,7 @@ div#content {
     background-color: rgb(23, 26, 33);
     border: 5px outset rgb(51, 58, 73);
     float: left;
+    color: #fff;
 }
 
 .tile_big.steam:hover {
@@ -109,6 +113,7 @@ div#content {
     background-color: rgb(114,137,218);
     border: 5px outset rgb(129, 154, 245);
     float: left;
+    cursor: pointer;
 }
 
 .tile_big.dis:hover {
