@@ -13,6 +13,11 @@
         return document.getElementsByClassName(what);
     }
 
+    // Delays stuff
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
     //  Post metadata
     let dateDiv     = getElem('date');
     let authorDiv   = getElem('author');
@@ -69,16 +74,15 @@
     // Get tiles and boxes into NodeLists
     let tiles = getClass('tile_big');
     let boxes = getClass('tile_desc');
+    let mouseOver = false;
 
     for(let i = 0; i < tiles.length; ++i) {
         tiles[i].onmouseover = function() {
-            // boxes[i].style.visibility = 'visible';
             boxes[i].style.opacity = '1.0';
             boxes[i].style.transform = 'scale(1.05)';
         }
 
-        tiles[i].onmouseout = function() {
-            // boxes[i].style.visibility = 'hidden';
+        tiles[i].onmouseleave = function() {
             boxes[i].style.opacity = '0.0';
             boxes[i].style.transform = 'scale(1.0)';
         }
