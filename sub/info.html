@@ -7,90 +7,110 @@
         <meta name="description" content="A website made for a graduation project" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
         <meta name="robots" content="index,follow" />
-        <link rel="stylesheet" href="../css/substyle.css" />
-        <script src="../js/main.js"></script>
+        <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="../res/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../res/icons/css/fontawesome-all.css" />
+        <link rel="stylesheet" href="../css/info.css" />
     </head>
     <body>
+        <!-- Hidden Window div -->
+        <div id="login-window">
+            <div class="window-title">
+                <div id="close-button">X</div>
+                LOGIN FAILED!
+            </div>
+            <div class="window-content">
+                Login system still under construction!
+            </div>
+        </div>
+        
         <!-- The entire document is wrapped inside this "app" block -->
         <div id="app">
+
             <!-- Our website's logo -->
             <div id="logo">
                 <!-- some image goes here -->
-                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
+                <img src="../res/logo.png" class="logo-image" alt="SINISTER"/>
             </div>
-            
+
             <!-- Banners -->
             <div id="banner">
-                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
+                <img src="../res/banner.png" class="banner-image" alt="BANNER"/>
             </div>
 
             <!-- Control Panel for website's owner -->
             <div id="control-panel">
-                <form class="control-panel">
+                <form class="control-panel" name="control-panel">
                     <div class="panel-title">
                         LOGIN
                     </div>
                     <div class="panel-aligner">
                         <div class="panel-subtitle">Username</div>
-                        <input type="text" name="username" class="panel-edit">
+                        <input type="text" name="username" class="panel-edit" id="login">
                     </div>
                     <div class="panel-aligner">
                         <div class="panel-subtitle">Password</div>
-                        <input type="text" name="password" class="panel-edit">
+                        <input type="password" name="password" class="panel-edit" id="password">
                     </div>
-                    <input type="submit" value="SUBMIT" class="panel-submit">
+                    <input type="button" value="SUBMIT" class="panel-submit" id="submit-button">
                 </form>
             </div>
 
             <div style="clear:both;"></div>
 
             <!-- Left Nav Menu -->
-            <nav id="left-panel">
+            <div id="left-panel">
+                <nav id="left-panel">
 
-                <!-- Homepage -->
-                <a href="index.html" class="option">
-                    MAIN
-                </a>
+                    <!-- Homepage -->
+                    <a href="../index.html" class="option">
+                        MAIN
+                    </a>
 
-                <!-- Projects -->
-                <a href="sub/projects.html" class="option">
-                    PROJECTS
-                </a>
+                    <!-- Projects -->
+                    <a href="projects.html" class="option">
+                        PROJECTS
+                    </a>
 
-                <!-- Contact/Social -->
-                <a href="sub/contact.html" class="option">
-                    CONTACT 
-                </a>
+                    <!-- Contact/Social -->
+                    <a href="contact.html" class="option">
+                        CONTACT
+                    </a>
 
-                <!-- Info/sources/etc. -->
-                <a href="sub/info.html" class="option">
-                    INFO
-                </a>
+                    <!-- Info/sources/etc. -->
+                    <a href="info.html" class="option">
+                        INFO
+                    </a>
 
-            </nav>
+                </nav>
+            </div>
 
             <!-- Content wrapper of the website -->
             <article id="main">
                 <!-- Header of the article/content -->
                 <header id="topbar">
-
+                    posted on: <span id="date"></span>
+                    <br />
+                    by <span id="author"></span>
                 </header>
 
                 <!-- Actual content -->
                 <div id="content">
-
+                    This website was made as a graduation project. It's nothing fancy, just enough to prove my knowledge, experience and project management. The entire source code of the website is open and free to download via the Github repository on the <i>Projects</i> page. The website was being developed at a stable pace and with Github you can check the commits I made from 2 different computers and also see traffic, language use and the version control.
                 </div>
             </article>
 
             <!-- Ad Banner -->
             <div id="ad-right">
-
+                Place for an advertisement
             </div>
 
             <!-- Footer -->
             <footer>
-
+                SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
             </footer>
+
         </div>
+        <script src="../js/main.js"></script>
     </body>
 </html>

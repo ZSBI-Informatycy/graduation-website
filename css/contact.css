@@ -86,20 +86,20 @@ div#content {
 }
 
 /* Git Icon */
-.tile_big.git {
+.tile_big.steam {
     align-self: flex-start;
-    background-color: rgb(32, 32, 110);
-    border: 5px outset #44449b;
+    background-color: rgb(23, 26, 33);
+    border: 5px outset rgb(51, 58, 73);
     float: left;
 }
 
-.tile_big.git:hover {
-    background-color: rgb(32, 32, 131);
+.tile_big.steam:hover {
+    background-color: rgb(33, 38, 48);
 }
 
-.tile_big.git:active {
-    border: 5px inset #44449b;
-    background-color: rgb(32, 32, 131);
+.tile_big.steam:active {
+    border: 5px inset rgb(51, 58, 73);
+    background-color: rgb(23, 26, 33);
 }
 
 /* Discord server */
