@@ -1,116 +1,116 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<title>SINISTER</title>
-		<meta charset="utf-8" />
-		<meta name="author" content="Marek Małecki" />
-		<meta name="description" content="A website made for a graduation project" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" > 
-		<meta name="robots" content="index,follow" />
-		<link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="res/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="res/icons/css/fontawesome-all.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<!-- Hidden Window div -->
-		<div id="login-window">
-			<div class="window-title">
-				<div id="close-button">X</div>
-				LOGIN FAILED!
-			</div>
-			<div class="window-content">
-				Login system still under construction!
-			</div>
-		</div>
-		
-		<!-- The entire document is wrapped inside this "app" block -->
-		<div id="app">
+    <head>
+        <title>SINISTER</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Marek Małecki" />
+        <meta name="description" content="A website made for a graduation project" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+        <meta name="robots" content="index,follow" />
+        <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="res/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="res/icons/css/fontawesome-all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Hidden Window div -->
+        <div id="login-window">
+            <div class="window-title">
+                <div id="close-button">X</div>
+                LOGIN FAILED!
+            </div>
+            <div class="window-content">
+                Login system still under construction!
+            </div>
+        </div>
+        
+        <!-- The entire document is wrapped inside this "app" block -->
+        <div id="app">
 
-			<!-- Our website's logo -->
-			<div id="logo">
-				<!-- some image goes here -->
-				<img src="res/logo.png" class="logo-image" alt="SINISTER"/>
-			</div>
+            <!-- Our website's logo -->
+            <div id="logo">
+                <!-- some image goes here -->
+                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
+            </div>
 
-			<!-- Banners -->
-			<div id="banner">
-				<img src="res/banner.png" class="banner-image" alt="BANNER"/>
-			</div>
+            <!-- Banners -->
+            <div id="banner">
+                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
+            </div>
 
-			<!-- Control Panel for website's owner -->
-			<div id="control-panel">
-				<form class="control-panel" name="control-panel">
-					<div class="panel-title">
-						LOGIN
-					</div>
-					<div class="panel-aligner">
-						<div class="panel-subtitle">Username</div>
-						<input type="text" name="username" class="panel-edit" id="login">
-					</div>
-					<div class="panel-aligner">
-						<div class="panel-subtitle">Password</div>
-						<input type="password" name="password" class="panel-edit" id="password">
-					</div>
-					<input type="button" value="SUBMIT" class="panel-submit" id="submit-button">
-				</form>
-			</div>
+            <!-- Control Panel for website's owner -->
+            <div id="control-panel">
+                <form class="control-panel" name="control-panel">
+                    <div class="panel-title">
+                        LOGIN
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Username</div>
+                        <input type="text" name="username" class="panel-edit" id="login">
+                    </div>
+                    <div class="panel-aligner">
+                        <div class="panel-subtitle">Password</div>
+                        <input type="password" name="password" class="panel-edit" id="password">
+                    </div>
+                    <input type="button" value="SUBMIT" class="panel-submit" id="submit-button">
+                </form>
+            </div>
 
-			<div style="clear:both;"></div>
+            <div style="clear:both;"></div>
 
-			<!-- Left Nav Menu -->
-			<div id="left-panel">
-				<nav id="left-panel">
+            <!-- Left Nav Menu -->
+            <div id="left-panel">
+                <nav id="left-panel">
 
-					<!-- Homepage -->
-					<a href="index.html" class="option">
-						MAIN
-					</a>
+                    <!-- Homepage -->
+                    <a href="index.html" class="option">
+                        MAIN
+                    </a>
 
-					<!-- Projects -->
-					<a href="sub/projects.html" class="option">
-						PROJECTS
-					</a>
+                    <!-- Projects -->
+                    <a href="sub/projects.html" class="option">
+                        PROJECTS
+                    </a>
 
-					<!-- Contact/Social -->
-					<a href="sub/contact.html" class="option">
-						CONTACT
-					</a>
+                    <!-- Contact/Social -->
+                    <a href="sub/contact.html" class="option">
+                        CONTACT
+                    </a>
 
-					<!-- Info/sources/etc. -->
-					<a href="sub/info.html" class="option">
-						INFO
-					</a>
+                    <!-- Info/sources/etc. -->
+                    <a href="sub/info.html" class="option">
+                        INFO
+                    </a>
 
-				</nav>
-			</div>
+                </nav>
+            </div>
 
-			<!-- Content wrapper of the website -->
-			<article id="main">
-				<!-- Header of the article/content -->
-				<header id="topbar">
-					posted on: <span id="date"></span>
-					<br />
-					by <span id="author"></span>
-				</header>
+            <!-- Content wrapper of the website -->
+            <article id="main">
+                <!-- Header of the article/content -->
+                <header id="topbar">
+                    posted on: <span id="date"></span>
+                    <br />
+                    by <span id="author"></span>
+                </header>
 
-				<!-- Actual content -->
-				<div id="content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lobortis dui, vel commodo felis. Phasellus placerat diam dui. Nulla ultricies orci erat, quis venenatis tellus commodo in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam convallis sodales leo vel aliquam. Mauris neque enim, mollis eu elit ut, malesuada placerat purus. Ut rutrum, eros quis lobortis vulputate, mauris risus ornare dolor, nec semper lectus eros congue massa. Nulla euismod sit amet enim et eleifend. Nam enim sapien, eleifend eget arcu et, lacinia tincidunt diam. Morbi aliquam blandit ex vitae dignissim. Morbi et tortor ornare, semper tellus eget, lobortis mi. Mauris sollicitudin lacus elit, nec luctus quam luctus vel. Aliquam auctor nulla malesuada sem egestas egestas. Maecenas ac mi dignissim, suscipit justo sit amet, ultrices elit. Phasellus auctor leo vitae magna aliquet, nec consequat sapien venenatis. Vestibulum et efficitur arcu. 
-				</div>
-			</article>
+                <!-- Actual content -->
+                <div id="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lobortis dui, vel commodo felis. Phasellus placerat diam dui. Nulla ultricies orci erat, quis venenatis tellus commodo in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam convallis sodales leo vel aliquam. Mauris neque enim, mollis eu elit ut, malesuada placerat purus. Ut rutrum, eros quis lobortis vulputate, mauris risus ornare dolor, nec semper lectus eros congue massa. Nulla euismod sit amet enim et eleifend. Nam enim sapien, eleifend eget arcu et, lacinia tincidunt diam. Morbi aliquam blandit ex vitae dignissim. Morbi et tortor ornare, semper tellus eget, lobortis mi. Mauris sollicitudin lacus elit, nec luctus quam luctus vel. Aliquam auctor nulla malesuada sem egestas egestas. Maecenas ac mi dignissim, suscipit justo sit amet, ultrices elit. Phasellus auctor leo vitae magna aliquet, nec consequat sapien venenatis. Vestibulum et efficitur arcu. 
+                </div>
+            </article>
 
-			<!-- Ad Banner -->
-			<div id="ad-right">
-				Place for an advertisement
-			</div>
+            <!-- Ad Banner -->
+            <div id="ad-right">
+                Place for an advertisement
+            </div>
 
-			<!-- Footer -->
-			<footer>
-				SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
-			</footer>
+            <!-- Footer -->
+            <footer>
+                SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
+            </footer>
 
-		</div>
-		<script src="js/main.js"></script>
-	</body>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
 </html>
