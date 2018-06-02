@@ -6,91 +6,134 @@
         <meta name="author" content="Marek Małecki" />
         <meta name="description" content="A website made for a graduation project" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
-        <meta name="robots" content="index,follow" />
-        <link rel="stylesheet" href="../css/substyle.css" />
-        <script src="../js/main.js"></script>
+		<meta name="robots" content="index,follow" />
+		<link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="../res/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../res/icons/css/fontawesome-all.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
     </head>
     <body>
-        <!-- The entire document is wrapped inside this "app" block -->
-        <div id="app">
-            <!-- Our website's logo -->
-            <div id="logo">
-                <!-- some image goes here -->
-                <img src="res/logo.png" class="logo-image" alt="SINISTER"/>
-            </div>
-            
-            <!-- Banners -->
-            <div id="banner">
-                <img src="res/banner.png" class="banner-image" alt="BANNER"/>
-            </div>
+        <!-- Hidden Window div -->
+		<div id="login-window">
+			<div class="window-title">
+				<div id="close-button">X</div>
+				LOGIN FAILED!
+			</div>
+			<div class="window-content">
+				Login system still under construction!
+			</div>
+		</div>
+		
+		<!-- The entire document is wrapped inside this "app" block -->
+		<div id="app">
 
-            <!-- Control Panel for website's owner -->
-            <div id="control-panel">
-                <form class="control-panel">
-                    <div class="panel-title">
-                        LOGIN
-                    </div>
-                    <div class="panel-aligner">
-                        <div class="panel-subtitle">Username</div>
-                        <input type="text" name="username" class="panel-edit">
-                    </div>
-                    <div class="panel-aligner">
-                        <div class="panel-subtitle">Password</div>
-                        <input type="text" name="password" class="panel-edit">
-                    </div>
-                    <input type="submit" value="SUBMIT" class="panel-submit">
-                </form>
-            </div>
+			<!-- Our website's logo -->
+			<div id="logo">
+				<!-- some image goes here -->
+				<img src="../res/logo.png" class="logo-image" alt="SINISTER"/>
+			</div>
 
-            <div style="clear:both;"></div>
+			<!-- Banners -->
+			<div id="banner">
+				<img src="../res/banner.png" class="banner-image" alt="BANNER"/>
+			</div>
 
-            <!-- Left Nav Menu -->
-            <nav id="left-panel">
+			<!-- Control Panel for website's owner -->
+			<div id="control-panel">
+				<form class="control-panel" name="control-panel">
+					<div class="panel-title">
+						LOGIN
+					</div>
+					<div class="panel-aligner">
+						<div class="panel-subtitle">Username</div>
+						<input type="text" name="username" class="panel-edit" id="login">
+					</div>
+					<div class="panel-aligner">
+						<div class="panel-subtitle">Password</div>
+						<input type="password" name="password" class="panel-edit" id="password">
+					</div>
+					<input type="button" value="SUBMIT" class="panel-submit" id="submit-button">
+				</form>
+			</div>
 
-                <!-- Homepage -->
-                <a href="index.html" class="option">
-                    MAIN
-                </a>
+			<div style="clear:both;"></div>
 
-                <!-- Projects -->
-                <a href="sub/projects.html" class="option">
-                    PROJECTS
-                </a>
+			<!-- Left Nav Menu -->
+			<div id="left-panel">
+				<nav id="left-panel">
 
-                <!-- Contact/Social -->
-                <a href="sub/contact.html" class="option">
-                    CONTACT 
-                </a>
+					<!-- Homepage -->
+					<a href="../index.html" class="option">
+						MAIN
+					</a>
 
-                <!-- Info/sources/etc. -->
-                <a href="sub/info.html" class="option">
-                    INFO
-                </a>
+					<!-- Projects -->
+					<a href="projects.html" class="option">
+						PROJECTS
+					</a>
 
-            </nav>
+					<!-- Contact/Social -->
+					<a href="contact.html" class="option">
+						CONTACT
+					</a>
 
-            <!-- Content wrapper of the website -->
-            <article id="main">
-                <!-- Header of the article/content -->
-                <header id="topbar">
+					<!-- Info/sources/etc. -->
+					<a href="info.html" class="option">
+						INFO
+					</a>
 
-                </header>
+				</nav>
+			</div>
 
-                <!-- Actual content -->
-                <div id="content">
+			<!-- Content wrapper of the website -->
+			<article id="main">
+				<!-- Header of the article/content -->
+				<header id="topbar">
+					posted on: <span id="date"></span>
+					<br />
+					by <span id="author"></span>
+				</header>
 
-                </div>
-            </article>
+				<!-- Actual content -->
+				<div id="content">
+					<a class="tile_big steam" href="https://github.com/ZSBI-Informatycy/graduation-website" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="tile_text">
+                            SINISTER
+                        </div>
+					</a>
+					<div class="tile_desc">
+						<img src="../res/scr/vscode.png">
+						<img src="../res/scr/git.png">
+						<br>
+						This website and the fictional company behind is a project that took more effort than it appears like it. The source code is open source and available on the repo where the link leads to. The webpage was built with running on a server in mind.
+					</div>
+					<div style="clear: both;"></div>
+					<div class="tile_big dis">
+                        <i class="fab fa-discord"></i>
+                        <div class="tile_text">
+                            DISCORD
+                        </div>
+					</div>
+					<div class="tile_desc">
+						<img src="../res/scr/discord_1.png">
+						<img src="../res/scr/discord-2.png">
+						My Discord server is a project that is in administrative and maintenance work for over 3 years now. It connects a big chunk of the Polish competitive e-sport scene, even though it started out as a voice channel for 9 people. It has been under my administration since launch and it has been a great responsibility of maintenance since the beginning.
+					</div>
+				</div>
+			</article>
 
-            <!-- Ad Banner -->
-            <div id="ad-right">
+			<!-- Ad Banner -->
+			<div id="ad-right">
+				Place for an advertisement
+			</div>
 
-            </div>
+			<!-- Footer -->
+			<footer>
+				SINISTER&trade; All Rights Reserved &copy; Marek Małecki &mdash; 2018r.
+			</footer>
 
-            <!-- Footer -->
-            <footer>
-
-            </footer>
-        </div>
+		</div>
+        <script src="../js/main.js"></script>
     </body>
 </html>

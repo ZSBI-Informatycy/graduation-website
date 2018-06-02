@@ -1,14 +1,23 @@
 (function() {
 	'use strict';
 
-	// Utility function
+	// Utility functions
+
+	// Gets the element from its ID
 	function getElem(what) {
 		return document.getElementById(what);
 	}
 
+	// Returns a NodeList to elements defined by their class name
+	function getClass(what) {
+		return document.getElementsByClassName(what);
+	}
+
+	//  Post metadata
 	let dateDiv     = getElem('date');
 	let authorDiv   = getElem('author');
 
+	// Date variables
 	let today   = new Date();
 	let dd      = today.getDate();
 	let mm      = today.getMonth() + 1;
@@ -34,6 +43,7 @@
 		authorDiv.innerHTML = author;
 	}
 
+	// The login system
 	let submitButton    = getElem('submit-button');
 	let app             = getElem('app');
 	let login           = getElem('login-window');
@@ -54,6 +64,31 @@
 		app.style.filter = 'blur(0px) brightness(100%)';
 	}
 
+	// Tile description appearing on hover
+
+	// Get tiles and boxes into NodeLists
+	let tiles = getClass('tile_big');
+	let boxes = getClass('tile_desc');
+
+	for(let i = 0; i < tiles.length; ++i) {
+		tiles[i].onmouseover = function() {
+			// boxes[i].style.visibility = 'visible';
+			boxes[i].style.opacity = '1.0';
+			boxes[i].style.transform = 'scale(1.05)';
+		}
+
+		tiles[i].onmouseout = function() {
+			// boxes[i].style.visibility = 'hidden';
+			boxes[i].style.opacity = '0.0';
+			boxes[i].style.transform = 'scale(1.0)';
+		}
+
+		if(i > 0) {
+			boxes[i].style.bottom = '4vh';
+		}
+	}
+
+	// Make sure the script runs after the DOM has loaded
 	window.addEventListener('load', function () {
 		writeDate();
 		writeAuthor();
