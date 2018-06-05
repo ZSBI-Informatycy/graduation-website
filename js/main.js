@@ -74,7 +74,6 @@
     // Get tiles and boxes into NodeLists
     let tiles = getClass('tile_big');
     let boxes = getClass('tile_desc');
-    let mouseOver = false;
 
     for(let i = 0; i < tiles.length; ++i) {
         tiles[i].onmouseover = function() {
